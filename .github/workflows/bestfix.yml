@@ -14,9 +14,9 @@ jobs:
         python-version: '3.9'
     - name: bestfix.py
       run: |
-        pip install --upgrade pip
-        pip install -r requirements.txt
         cd /home/runner/work/field-integrations/field-integrations/shiftleft-utils
+        pip install --upgrade pip
+        pip install -r requirements.txt        
         py /bestfix.py -a $AppName 
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
