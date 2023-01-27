@@ -17,6 +17,7 @@ jobs:
         cd /home/runner/work/field-integrations/field-integrations/shiftleft-utils
         pip install --upgrade pip
         pip install -r requirements.txt        
-        python3 /shiftleft-utils/bestfix.py -a $AppName 
+        ls -l
+        python3 bestfix.py -a $AppName 
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
