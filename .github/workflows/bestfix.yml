@@ -18,6 +18,6 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt        
         ls -l
-        python3 bestfix.py -a $AppName -o /home/runner/work/field-integrations/field-integrations
+        python3 bestfix.py -a $AppName -o .
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
